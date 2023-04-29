@@ -1,0 +1,36 @@
+Create a fashion store database 
+
+CREATE TABLE store (id INTEGER PRIMARY KEY, item TEXT, section TEXT, price INTEGER, popularity INTEGER);
+
+INSERT INTO store VALUES (1, "jeans", "pants", 14.99, 60);
+INSERT INTO store VALUES (2, "Floral top", "shirts", 12.99, 40);
+INSERT INTO store VALUES (3, "sandals", "shoes", 10.00, 80);
+INSERT INTO store VALUES (4, "Pink skirt", "pants", 7.00, 90); 
+INSERT INTO store VALUES (5, "White hoodie", "jackets", 25.00, 65);
+INSERT INTO store VALUES (6, "Blue Button up", "shirts", 12.99, 30);
+INSERT INTO store VALUES (7, "leggings", "pants", 17.99, 80);
+INSERT INTO store VALUES (8, "boots", "shoes", 15.00, 70);
+INSERT INTO store VALUES (9, "converse", "shoes", 30.00, 85);
+INSERT INTO store VALUES (10, "Zip up", "jackets", 20.00, 50);
+INSERT INTO store VALUES (11, "sweatpants", "pants", 10.00, 60);
+INSERT INTO store VALUES (12, "crewneck", "shirts", 15.00, 75);
+INSERT INTO store VALUES (13, "Raglan sleeve", "shirts", 10.00, 40);
+INSERT INTO store VALUES (14, "Henley", "shirts", 16.99, 60);
+INSERT INTO store VALUES (15, "maxi skirt", "pants", 14.99, 70);
+
+- displaying the data ordered by price. 
+SELECT * FROM store
+ORDER BY price desc;
+
+- What is the 5 most popular items?
+SELECT item, price, popularity FROM store ORDER BY popularity desc limit 5; 
+
+- What is the average price in the pants section?
+
+SELECT AVG(price) "AVG Pants item price" FROM store WHERE = "pants" 
+
+
+
+
+
+
